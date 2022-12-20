@@ -38,6 +38,28 @@ copy:
 social:
   fab fa-github: https://github.com/lxw8191 || Github
   fas fa-envelope: mailto:lxw8191@126.com || Email
+  fab fa-qq: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2779038932&website=www.oicqzone.com || QQ
+  fab fa-weixin: /img/mist-sky.jpg || QQ
+  fab fa-zhihu: https://www.zhihu.com/people/e-e-e-e-fei-ge-ha-ha-san
+  fab fa-bilibili: https://space.bilibili.com/1604964265
+#  fab fa-wangyiyun: https://www.zhihu.com/people/e-e-e-e-fei-ge-ha-ha-san
+#  fab fa-gitee: https://gitee.com/lxw8191 || Gitee
+#  fas fa-envelope-open-text: mailto:2779038932@qq.com || Email
+#  fas fa-qq: mailto:lxw8191@126.com || QQ
+#  fab fa-github1: /img/mist-sky.jpg || WeChat
+
+#  其中，社交图标（如：fa-github）你可以在 Font Awesome 中搜索找到。以下是常用社交图标的标识，供你参考：
+#Facebook: fab fa-facebook
+#Twitter: fab fa-twitter
+#Google-plus: fab fa-google-plus
+#Linkedin: fab fa-linkedin
+#Tumblr: fab fa-tumblr
+#Medium: fab fa-medium
+#Slack: fab fa-slack
+#Sina Weibo: fab fa-weibo
+#Wechat: fab fa-weixin
+#QQ: fab fa-qq
+#Zhihu: fab fa-zhihu
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -138,6 +160,13 @@ cover:
     - /img/lxw10.jpg
     - /img/lxw11.jpg
     - /img/lxw12.jpg
+    - /img/1.webp
+    - /img/2.webp
+    - /img/3.webp
+    - /img/4.webp
+    - /img/5.webp
+    - /img/6.webp
+    - /img/log.jpg
 
 
 # Replace Broken Images (替換無法顯示的圖片)
@@ -210,14 +239,19 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+     - img: /img/wechat.jpg
+       link:
+       text: wechat
+     - img: /img/alipay.jpg
+       link:
+       text: alipay
+#     - img: /img/mist-sky.jpg
+#       link:
+#       text: mist-sky
+
+
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -391,12 +425,12 @@ artalk:
 # Chat Services
 # --------------------------------------
 
-# Chat Button [recommend]
+# Chat Button [recommend]  在线聊天
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -423,10 +457,10 @@ gitter:
   room:
 
 # crisp
-# https://crisp.chat/en/
+# https://crisp.chat/en/     https://app.crisp.chat/  在线聊天配置
 crisp:
-  enable: false
-  website_id:
+  enable: true
+  website_id: c72aff66-fedb-4240-9214-ab9c5e0591dc
 
 # messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
@@ -576,7 +610,7 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖動特效)
   mobile: false
@@ -594,14 +628,16 @@ click_heart:
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
-  enable: false
+  enable: true
   text:
-    # - I
-    # - LOVE
-    # - YOU
-  fontSize: 15px
-  random: false
-  mobile: false
+     - 混吃等死
+     - 吃
+     - 喝
+     - 玩
+     - 乐
+  fontSize: 30px
+  random: true
+  mobile: true
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
@@ -619,8 +655,8 @@ beautify:
 font:
   global-font-size: 15px
   code-font-size: 14px
-  font-family:
-  code-font-family:
+  font-family: YSHST, -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+  code-font-family: Consolas, YSHST, "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -893,6 +929,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - - <link rel="stylesheet" href="https://npm.elemecdn.com/ethan4116-blog/lib/css/plane_v2.css">   # 主页小飞只因
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
@@ -970,3 +1007,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
+
+

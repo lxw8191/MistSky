@@ -4,8 +4,8 @@
 
 # Site
 title: Mist Sky Blog
-subtitle: '少量多餐😴'
-description: '好好工作，好好生活...~~~'
+subtitle: '身体健康，万事如意😴'
+description: '混吃等死...~~~'
 keywords: 'mistsky.cloud'
 author: 岚天
 language: en
@@ -297,3 +297,47 @@ swiper:
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+# 文章双侧栏显示
+butterfly_article_double_row:
+  enable: true
+
+# wowjs动画
+wowjs:
+  enable: true #控制动画开关。true是打开，false是关闭
+  priority: 10 #过滤器优先级
+  mobile: false #移动端是否启用，默认移动端禁用
+  animateitem:
+    - class: recent-post-item #必填项，需要添加动画的元素的class
+      style: animate__rotateIn #必填项，需要添加的动画   https://animate.style/
+      duration: 2s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 1s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
+    - class: card-widget
+      style: animate__bounceInRight
+    - class: pagination
+      style: animate__flipInX
+  animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
+
+
+# 是否在首页显示音乐
+#music:
+#  enable: true
+#  title:             #非吸底模式有效
+#    enable: true
+#    show: 听听音乐
+#  server: netease   #require music platform: netease, tencent, kugou, xiami, baidu
+#  type: playlist    #require song, playlist, album, search, artist
+#  id: 1663787341     #require song id / playlist id / album id / search keyword
+#  fixed: false      # 开启吸底模式
+#  autoplay: false   # 是否自动播放
+#  theme: '#42b983'
+#  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+#  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+#  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+#  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+#  listFolded: true  # 列表默认折叠
+
