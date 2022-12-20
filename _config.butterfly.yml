@@ -7,7 +7,7 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  列表||fas fa-list:
+  列表||fas fa-list || hide:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
   留言板: /comments/ || fas fa-envelope-open
@@ -929,10 +929,12 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - - <link rel="stylesheet" href="https://npm.elemecdn.com/ethan4116-blog/lib/css/plane_v2.css">   # 主页小飞只因
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/ethan4116-blog/lib/css/plane_v2.css">   # 主页小飞只因
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script defer src="/js/light.js"></script> # 霓虹灯(必须defer否则有时候会不生效)
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1007,5 +1009,3 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-
-
