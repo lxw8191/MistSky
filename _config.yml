@@ -127,7 +127,7 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: live2d-widget-model-koharu # npm-module package name
+    use: live2d-widget-model-koharu # npm-module package name     https://github.com/EYHN/hexo-helper-live2d
     # use: live2d-widget-model-wanko # npm-module package name
     
  # live2D看板娘
@@ -138,9 +138,9 @@ live2d:
     # use: ./wives/wanko # 相对于博客根目录的路径
     # use: https://npm.elemecdn.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
   display:
-    position: left #控制看板娘位置
-    width: 150 #控制看板娘大小
-    height: 300 #控制看板娘大小
+    position: right #控制看板娘位置
+    width: 200 #控制看板娘大小     150
+    height: 350 #控制看板娘大小   300
   mobile:
     show: true # 手机中是否展示
 
@@ -236,11 +236,12 @@ categoryBar:
     - descr: 前端指南🕸️
       cover: /img/1.webp
     - descr: JAVA从入门到入狱☕
-      cover: /img/2.webp
-    - descr: 人生苦短，我选python🐍🕷️
       cover: /img/3.webp
+    - descr: 人生苦短，我选python🐍🕷️
+      cover: https://s1.vika.cn/space/2022/12/22/2c05f77e98464e8ba2c3e40fbdad6a9d
     - descr: linux🐧
-      cover: /img/4.webp
+      cover: https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2022/lxw/2011951.jpg
+#      cover: /img/4.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 magnet:
@@ -388,3 +389,10 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+
+# APlayer  引入Aplayer播放音乐
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
