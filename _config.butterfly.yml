@@ -30,7 +30,7 @@ copy:
   enable: true
   copyright:
     enable: false
-    limit_count: 50
+    limit_count: 5
 
 # social settings (社交圖標設置)
 # formal:
@@ -44,14 +44,16 @@ social:
   fab fa-bilibili: https://space.bilibili.com/1604964265 || bilibili
   fab fa-weibo: https://weibo.com/lxw8191 || 微博
   fab fa-cuttlefish: https://blog.csdn.net/weixin_46310452?type=blog || CSDN博客
-  
+  fab fa-tiktok: https://www.douyin.com/user/MS4wLjABAAAAFbNqMg646elk7S9JNsktrW054EHaozBJ7tVJ7LiGfYw || 抖音
+  fab fa-google: lxw.mistsky.cloud || 主页域名
+  fab fa-docker: https://hub.docker.com/u/liuxiaowei1 || Docker Hub
 #  fab fa-wangyiyun: https://www.zhihu.com/people/e-e-e-e-fei-ge-ha-ha-san
 #  fab fa-gitee: https://gitee.com/lxw8191 || Gitee
 #  fas fa-envelope-open-text: mailto:2779038932@qq.com || Email
 #  fas fa-qq: mailto:lxw8191@126.com || QQ
 #  fab fa-github1: /img/mist-sky.jpg || WeChat
 
-#  其中，社交图标（如：fa-github）你可以在 Font Awesome 中搜索找到。以下是常用社交图标的标识，供你参考：
+#  其中，社交图标（如：fa-github）你可以在 Font Awesome 中搜索找到。以下是常用社交图标的标识，供你参考： https://fontawesome.com/icons/tiktok?s=&f=brands
 #Facebook: fab fa-facebook
 #Twitter: fab fa-twitter
 #Google-plus: fab fa-google-plus
@@ -63,6 +65,8 @@ social:
 #Wechat: fab fa-weixin
 #QQ: fab fa-qq
 #Zhihu: fab fa-zhihu
+# 谷歌 <i class="fa-brands fa-google"></i>
+# <i class="fa-brands fa-tiktok"></i> 抖音    <i class="fa-brands fa-docker"></i>
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -740,7 +744,10 @@ aside:
       link: https://github.com/lxw8191
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客！
+    content: "欢迎来到我的博客!
+              今天是冬至，记得吃饺子！🥟
+              <a href='https://github.com/lxw8191/blog-demo'>Mist Sky Blog 本站源码《本站会持续更新，源码以后会教如何部署之后更新github》...</a>
+              "
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
