@@ -5,7 +5,7 @@
 # Site
 title: 🌫️Mist Sky Blog
 subtitle: '身体健康，万事如意😴'
-description: '混吃等死😋...~~~，很懒不想写内容，之后再补充'
+description: '时不时更新，欢迎关注公众号! 很懒😪 ~不太想写内容，之后无聊的时候再补充，写一些部署网站的教程'
 keywords: 'mistsky.cloud'
 author: 岚天🌫️
 language: zh-CN
@@ -151,7 +151,8 @@ live2d:
 envelope_comment:
   enable: true #控制开关
   custom_pic:      
-    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+#    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    cover: /img/lxw7.jpg #信笺头部图片
     line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
     beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
     afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
@@ -160,6 +161,7 @@ envelope_comment:
     - 有什么想说的？
     - 有什么想吐槽的？
     - 哪怕是有什么想吃的，都可以告诉我哦~
+    - 本站邮箱:l@mistsky.cloud
     - VX:mist-sky
   bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
   height: #1050px，信封划出的高度
