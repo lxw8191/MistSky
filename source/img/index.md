@@ -1,0 +1,22 @@
+---
+title: 图片
+date: 2023-01-17 11:00:00
+---
+
+#分组相册（比较懒，就发几张照片，主要是传输的太慢了，要保证清晰等等...）
+<div class="gallery-group-main">
+{% galleryGroup 运动 热爱~ '/img/sports/' https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2023/lxw/2023_01_08_16_10_IMG_0244.JPG %}
+{% galleryGroup 美食 美食治愈 '/img/food/' https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2023/lxw/2023_01_12_19_16_IMG_0799.JPG %}
+{% galleryGroup 生活 爱生活，爱自己 '/img/life/' https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2023/lxw/IMG_0115.JPG %}
+{% galleryGroup 小猫~ 逗比 '/img/cat/' https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2023/lxw/2022_04_22_17_13_IMG_0161.JPG %}
+{% galleryGroup 高清壁纸~ 高清电脑壁纸 '/img/wallpaper/' https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2022/lxw/2011951.jpg %}
+</div>
+
+##html图片标签
+<img src="./1.webp">
+
+##单图相册
+{% gallery %}
+![](https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2022/lxw月球1.jpg)
+![](https://cdn.staticaly.com/gh/lxw8191/markdown_pic@main/2022/21backgroundDefault.jpg)
+{% endgallery %}

@@ -2,7 +2,7 @@
   "_args": [
     [
       "hexo-theme-butterfly@4.5.1",
-      "A:\\blog\\blog-demo"
+      "D:\\project\\git\\MistSky_Blog\\blog-demo"
     ]
   ],
   "_from": "hexo-theme-butterfly@4.5.1",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmmirror.com/hexo-theme-butterfly/-/hexo-theme-butterfly-4.5.1.tgz",
   "_spec": "4.5.1",
-  "_where": "A:\\blog\\blog-demo",
+  "_where": "D:\\project\\git\\MistSky_Blog\\blog-demo",
   "author": {
     "name": "Jerry",
     "email": "my@crazywong.com"

@@ -10,6 +10,7 @@ menu:
   娱乐||fas fa-list || hide:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
+    图片(相册): /img || fas fa-image
   留言板: /comments/ || fas fa-envelope-open
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
@@ -280,7 +281,7 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 8 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
@@ -497,9 +498,9 @@ footer:
 # Analysis
 # --------------------------------------
 
-# Baidu Analytics
+# Baidu Analytics    百度分析
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: a4fe1eeaa784ae067850fb97bc9e8a19
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -537,11 +538,12 @@ google_adsense:
 # Verification (站長驗證)
 # --------------------------------------
 
+#网站验证
 site_verification:
+   - name: baidu-site-verification
+     content: code-TKvSbuT1W7
   # - name: google-site-verification
   #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -630,10 +632,10 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: '226,136,78' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)E3884EFF
   opacity: 0.9 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
-  count: 88 # the number of lines, default: 99.
+  count: 20 # the number of lines, default: 99.
   mobile: true
 
 # Typewriter Effect (打字效果)
@@ -646,13 +648,13 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -974,6 +976,7 @@ inject:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/ethan4116-blog/lib/css/plane_v2.css">   # 主页小飞只因
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="/css/rightMenu.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
@@ -982,6 +985,8 @@ inject:
     - <script defer src="/js/universe.js"></script>
     - <script defer src="/js/cursor.js"></script>
     - <div class="aplayer no-destroy" data-id="7837008924" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted="true"></div> # 歌单配置   https://aplayer.js.org/#/zh-Hans/
+    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/rightMenu.js"></script>
     # - data-id、data-server、data-type分别对应了歌单的id，歌单的服务商、歌单的类型
     # https://music.163.com/#/playlist?id=7837008924这个是我的网易云歌单
 
